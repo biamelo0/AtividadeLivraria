@@ -1,0 +1,14 @@
+<div class="product-list">
+    <h2>Lista de produtos</h2>
+    <ul>
+        <li *ngFor="let product of products">
+            <img src="{{product.image}}" alt="">
+            <h3>{{product.name}}</h3>
+            <h4>{{product.description}}</h4>
+            <p>{{product.price | currency: 'BRL'}}</p>
+            <div class="descr">
+            <button>Comprar</button>
+            </div>
+        </li>
+    </ul>
+</div>
